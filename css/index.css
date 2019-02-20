@@ -160,10 +160,16 @@ body {
   justify-content: flex-end;
 }
 .container nav .nav-links {
-  width: 35%;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
+}
+@media (max-width: 500px) {
+  .container nav .nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .container nav .nav-links a {
   color: black;
