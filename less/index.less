@@ -64,6 +64,16 @@ html, body {
 @bg1: #808080;
 @bg2: #E9ECEF;
 
+// Mixins
+.flex(@dir: row) {
+	display: flex;
+	flex-direction: @dir;
+}
+.bg1() {
+	color: white;
+	background: @bg1;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -73,8 +83,7 @@ body {
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
+	.flex(column);
 	max-width: 870px;
 	margin: 0 auto;
 
@@ -139,8 +148,7 @@ body {
 		}
 
 		.cta-btn {
-			color: white;
-			background: @bg1;
+			.bg1;
 			font-size: 2rem;
 			padding: 11px 16px;
 			border: 0;
@@ -221,8 +229,7 @@ body {
 	}
 	/* Footer */
 	footer {
-		background: @bg1;
-		color: white;
+		.bg1;
 		text-align: center;
 		padding: 25px 0 40px 0;
 	}
