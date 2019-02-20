@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>My Resume</title>
 
@@ -25,10 +26,10 @@
     </nav>
     <main>
       <div class="top-content">
-        <img src="img/JohnnyA.png" alt="Profile Picture">
+        <img src="img/JohnnyA.png" class="profile-pic" alt="Profile Picture">
         <header>
           <h1>Johnny Appleseed - Web Dev</h1>
-          <p>Technology is my jam!</p>
+          <p class="tagline">Technology is my jam!</p>
         </header>
         <section class="cta">
           <p>
@@ -48,23 +49,13 @@
         </section> <!-- intro -->
         <section class="skills">
           <h2>Stuff I'm Good At:</h2>
-          <table>
-            <tr>
-              <td>Disc Golf</td>
-            </tr>
-            <tr>
-              <td>Coding up UI</td>
-            </tr>
-            <tr>
-              <td>Playing lots of video games</td>
-            </tr>
-            <tr>
-              <td>Using bootstrap grid</td>
-            </tr>
-            <tr>
-              <td>Taking long naps</td>
-            </tr>
-          </table>
+          <div class="skills-tbl">
+            <p>Disc Golf</p>
+            <p>Coding up UI</p>
+            <p>Playing lots of video games</p>
+            <p>Using bootstrap grid</p>
+            <p>Taking long naps</p>
+          </div>
         </section> <!-- skills -->
       </div> <!-- mid-content -->
         <div class="bot-content">
@@ -78,6 +69,8 @@
                 <th scope="col">Title</th>
                 <th scope="col">Tech Used</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <th scope="row">1</th>
                 <td>Apple</td>
@@ -96,7 +89,7 @@
                 <td>Dev Ops</td>
                 <td>AWS</td>
               </tr>
-            </thead>
+            </tbody>
           </table>
         </section> <!-- work-hist -->
       </div> <!-- bot-content -->
