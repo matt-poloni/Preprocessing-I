@@ -144,7 +144,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 400px 870px;
+  min-width: 400px;
+  max-width: 870px;
   margin: 0 auto;
   /* Navbar */
   /* Top Content */
