@@ -260,16 +260,14 @@ body {
 }
 .container .work-hist table {
   width: 100%;
+  margin-bottom: 40px;
 }
-.container .work-hist table tr {
+.container .work-hist table tr th,
+.container .work-hist table tr td {
   padding: 17px 0;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   text-align: left;
-}
-.container .work-hist table tr {
-  padding: 15px 0;
-  border-bottom: 1px solid lightgray;
 }
 .container footer {
   color: white;
