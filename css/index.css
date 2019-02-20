@@ -144,13 +144,23 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 870px;
+  width: 400px 870px;
   margin: 0 auto;
   /* Navbar */
   /* Top Content */
   /* Middle Content */
   /* Bottom Content */
   /* Footer */
+}
+@media (max-width: 900px) {
+  .container {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    margin: 0 10px;
+  }
 }
 .container h2 {
   font-size: 2.2rem;
@@ -183,6 +193,7 @@ body {
 }
 .container .top-content .profile-pic {
   margin-bottom: 8px;
+  max-width: 100%;
 }
 .container header {
   border-bottom: 1px solid lightgray;
@@ -211,10 +222,12 @@ body {
 }
 .container .mid-content {
   display: flex;
-  margin-top: 40px;
+  flex-wrap: wrap;
 }
 .container .mid-content section {
   flex: 1;
+  min-width: 300px;
+  margin-top: 40px;
 }
 .container .mid-content p {
   font-size: 16px;
