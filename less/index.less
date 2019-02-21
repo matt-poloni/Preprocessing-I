@@ -227,13 +227,23 @@ body {
 			width: 100%;
 			margin-bottom: 40px;
 
+			th {
+				font-weight: bold;
+			}
+
 			tr {
 				th, td {
 					padding: 17px 0;
 					border-top: 1px solid @gray;
 					border-bottom: 1px solid @gray;
 					text-align: left;
-				}				
+				}	
+			}
+
+			tbody {
+				tr:nth-of-type(odd) {
+					background: #F2F2F2;
+				}
 			}
 		}
 	}
