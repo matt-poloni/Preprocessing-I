@@ -141,6 +141,9 @@ html {
 body {
   font-size: 1.6rem;
 }
+button {
+  cursor: pointer;
+}
 .container {
   display: flex;
   flex-direction: column;
